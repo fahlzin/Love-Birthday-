@@ -3,22 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday My lLove</title>
+    <title>Happy Birthday My Love</title>
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
     <div class="conteudo">
-        <h1>FELIZ ANIVERSÁRIO AMOR DA MINHA VIDA</h1>
-        <p>Decidi fazer algo diferente dessa vez e criei esse ambiente para que você possa ter sempre contigo algo para lembrar o quanto você significa para mim e aqueles à sua volta, não sou bom com textos, mas darei o meu melhor.</p>
-        <audio src=""></audio>
-        <span></span>
-        <div>
+        <h1>FELIZ ANIVERSÁRIO <br> AMOR DA MINHA VIDA</h1>
+        <p class="first-p">Decidi fazer algo diferente dessa vez e criei esse ambiente para que você possa ter sempre contigo algo para lembrar o quanto você significa para mim e aqueles à sua volta.</p>
+        <div class="audio-player">
+            <audio id="meuAudio" src="./assets/sound/AnyConv.com__Voz 250415_212805.mp3"></audio>
+            
+            <div class="controls">
+              <button id="botaoPlayPause">▶️</button>
+            </div>
+        
+            <div class="wave-progress" onclick="mudarProgresso(event)">
+              <div class="progress-filled" id="barraProgresso"></div>
+              <div class="wave-bg"></div>
+            </div>
+        </div>
+        <span>Separei algumas fotos para deixar registrado aqui nosso caminho até agora e mostrar sua personalidade através das coisas que você ama.
+            (se prepare pq nem todas as fotos são boas kkkkk)</span>
+        <div class="container">
             <div class="card">
                 <img src="" alt="">
-                <span></span>
-                <p></p>
+                <span>00/00/0000</span>
+                <p class="card-text">Nada como relembrar nossa primeira
+                    foto juntos, um momento simples que hoje
+                    é uma das minhas lembranças preferidas.</p>
             </div>
         </div>
     </div>
+    <script src="./script/script.js"></script>
 </body>
 </html>
