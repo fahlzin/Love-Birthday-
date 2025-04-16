@@ -37,7 +37,7 @@ img {
 .conteudo {
     display: flex;
     flex-direction: column;
-    max-width: 320px;
+    max-width: 240px;
     text-align: center;
     margin: 80px;
     gap: 64px;
@@ -181,11 +181,11 @@ img {
         padding: 0 10px;
     }
 
-    .conteudo {
+    /*.conteudo {
         margin: 40px 0;
         gap: 64px;
         max-width: 80%;
-    }
+    }*/
 
     .player-container {
         flex-direction: column;
