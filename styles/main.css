@@ -17,7 +17,7 @@ h1 {
     padding: 0;
 }
 
-span {
+span.previa {
     font-family: poppins;
     font-weight: 500;
     color: #3EFF68;
@@ -31,82 +31,107 @@ p {
 img {
     width: 100%;
     height: 360px;
-    background-color: black;
+    background-color: rgb(46, 46, 46);
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+  text-align: center;
+  margin: 80px;
+  gap: 64px;
+  color: #FFFFFF;
 }
 
 .audio-player {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background: #3EFF68;
-    padding: 10px;
-    border-radius: 16px;
-    width: 100%;
-  }
-  
-  .controls button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: transparent;
-    border: none;
-    color: #212121;
-    font-size: 32px;
-    cursor: pointer;
-    width: 64px;
-    height: 64px;
-    margin: 0;
-    padding: 0;
-    transition: transform 0.2s;
-  }
-  
-  .controls button:hover {
-    transform: scale(1.1);
-  }
-  
-  .wave-progress {
-    position: relative;
-    width: 260px;
-    height: 10px;
-    overflow: hidden;
-    border-radius: 10px;
-    cursor: pointer;
-    background-color: #212121;
-  }
-  
-  .wave-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: repeating-linear-gradient(
-      to right,
-      #333 0px,
-      #333 2px,
-      #2a2a2a 2px,
-      #2a2a2a 4px
-    );
-    opacity: 0.5;
-    pointer-events: none;
-  }
-  
-  .progress-filled {
-    position: absolute;
-    height: 100%;
-    width: 0%;
-    background: rgba(39, 253, 128, 0.5);
-    z-index: 1;
-  }
+  background: #3EFF68;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 100%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
 
-.conteudo {
-    display: flex;
-    flex-direction: column;
-    max-width: 360px;
-    text-align: center;
-    margin: 80px;
-    gap: 64px;
-    color: #FFFFFF;
+.player-container {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  gap: 10px;
+  margin: 10px 16px 0 16px;
+}
+
+#botaoPlayPause {
+  all: unset;
+  color: #212121;
+  font-size: 32px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 48px;
+  height: 36px;
+  line-height: 1;
+}
+
+#botaoPlayPause:hover {
+  transform: scale(1.1);
+}
+
+/* Timeline */
+.wave-progress {
+  position: relative;
+  flex: 1;
+  height: 16px;
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+/* Fake waves preenchendo 100% */
+.wave-fake {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  padding: 0 5px;
+  z-index: 0;
+}
+
+.wave-fake .bar {
+  flex: 1;
+  margin: 0 1px;
+  background-color: #414040;
+  border-radius: 2px;
+}
+
+/* Barra de progresso */
+.progress-filled {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #569164;
+  z-index: 1;
+  width: 0%;
+  pointer-events: none;
+}
+
+.time-display {
+  text-align: center;
+  font-size: 14px;
+  color: #212121;
+  padding: 0;
+  margin: 0 20px 10px 72px;
+  font-family: roboto mono;
+  font-weight: 500;
 }
 
 .first-p {
@@ -114,7 +139,7 @@ img {
     font-weight: 200;
 }
 
-.container {
+.card-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -128,9 +153,29 @@ img {
     justify-content: center;
     width: 100%;
     height: auto;
+    position: relative;
 }
 
 .card-text {
     font-family: "Shadows Into Light Two", cursive;
     letter-spacing: 2px;
+    margin-top: 40px;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.data-overlay {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgb(26, 26, 26); /* fundo semi-transparente */
+  color: #fff;
+  padding: 5px 10px;
+  font-family: roboto mono;
+  font-size: 12px;
+  font-weight: 200;
 }

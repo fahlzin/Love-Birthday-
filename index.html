@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday My Love</title>
+
+    <link rel="icon" href="./assets/img/favicon/love-always-wins.png" type="image/x-icon">
+
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
@@ -12,26 +15,96 @@
         <p class="first-p">Decidi fazer algo diferente dessa vez e criei esse ambiente para que você possa ter sempre contigo algo para lembrar o quanto você significa para mim e aqueles à sua volta.</p>
         <div class="audio-player">
             <audio id="meuAudio" src="./assets/sound/AnyConv.com__Voz 250415_212805.mp3"></audio>
-            
-            <div class="controls">
-              <button id="botaoPlayPause">▶️</button>
-            </div>
         
-            <div class="wave-progress" onclick="mudarProgresso(event)">
-              <div class="progress-filled" id="barraProgresso"></div>
-              <div class="wave-bg"></div>
+            <div class="player-container">
+              <button id="botaoPlayPause">▶</button>
+              
+              <div class="wave-progress" onclick="mudarProgresso(event)">
+                <div class="wave-fake">
+                  <!-- 30 barras com alturas variadas -->
+                  <div class="bar" style="height: 40%;"></div>
+                  <div class="bar" style="height: 60%;"></div>
+                  <div class="bar" style="height: 80%;"></div>
+                  <div class="bar" style="height: 60%;"></div>
+                  <div class="bar" style="height: 30%;"></div>
+                  <div class="bar" style="height: 50%;"></div>
+                  <div class="bar" style="height: 70%;"></div>
+                  <div class="bar" style="height: 90%;"></div>
+                  <div class="bar" style="height: 60%;"></div>
+                  <div class="bar" style="height: 50%;"></div>
+                  <div class="bar" style="height: 60%;"></div>
+                  <div class="bar" style="height: 80%;"></div>
+                  <div class="bar" style="height: 70%;"></div>
+                  <div class="bar" style="height: 40%;"></div>
+                  <div class="bar" style="height: 30%;"></div>
+                  <div class="bar" style="height: 60%;"></div>
+                  <div class="bar" style="height: 70%;"></div>
+                  <div class="bar" style="height: 90%;"></div>
+                  <div class="bar" style="height: 60%;"></div>
+                  <div class="bar" style="height: 50%;"></div>
+                  <div class="bar" style="height: 40%;"></div>
+                  <div class="bar" style="height: 60%;"></div>
+                  <div class="bar" style="height: 80%;"></div>
+                  <div class="bar" style="height: 70%;"></div>
+                  <div class="bar" style="height: 40%;"></div>
+                  <div class="bar" style="height: 30%;"></div>
+                  <div class="bar" style="height: 50%;"></div>
+                  <div class="bar" style="height: 60%;"></div>
+                  <div class="bar" style="height: 80%;"></div>
+                  <div class="bar" style="height: 90%;"></div>
+                </div>
+                <div class="progress-filled" id="barraProgresso"></div>
+              </div>
+            </div>
+            <div class="time-display">
+                <span id="tempoAtual">00:00</span> / <span id="tempoTotal">00:00</span>
             </div>
         </div>
-        <span>Separei algumas fotos para deixar registrado aqui nosso caminho até agora e mostrar sua personalidade através das coisas que você ama.
-            (se prepare pq nem todas as fotos são boas kkkkk)</span>
-        <div class="container">
+
+        <span class="previa">
+            Separei algumas fotos para deixar registrado aqui nosso caminho até agora e mostrar sua personalidade através das coisas que você ama.
+            (se prepare pq nem todas as fotos são boas kkkkk)
+        </span>
+
+        <div class="card-container">
             <div class="card">
-                <img src="" alt="">
-                <span>00/00/0000</span>
-                <p class="card-text">Nada como relembrar nossa primeira
-                    foto juntos, um momento simples que hoje
-                    é uma das minhas lembranças preferidas.</p>
+                <img src="https://via.placeholder.com/300x200" alt="Imagem exemplo">
+                <div class="data-overlay">22/12/2022</div>
             </div>
+            <div class="card">
+                <img src="./assets/img/photos/30042023.jpg" alt="Imagem exemplo">
+                <div class="data-overlay">30/04/2023</div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/photos/18112023.jpg" alt="Imagem exemplo">
+                <div class="data-overlay">18/11/2023</div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/photos/27042024.jpg" alt="Imagem exemplo">
+                <div class="data-overlay">27/04/2024</div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/photos/14092024.jpg" alt="Imagem exemplo">
+                <div class="data-overlay">14/09/2024</div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/photos/14092024-2.jpg" alt="Imagem exemplo">
+                <div class="data-overlay">14/09/2024</div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/photos/15112024.jpg" alt="Imagem exemplo">
+                <div class="data-overlay">15/11/2024</div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/photos/01012025.jpg" alt="Imagem exemplo">
+                <div class="data-overlay">01/01/2025</div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/photos/01012025-2.jpg" alt="Imagem exemplo">
+                <div class="data-overlay">01/01/2025</div>
+            </div>
+            <p class="card-text">Resolvi trazer algumas fotos dos nossos momentos juntos, pelo menos o que temos registrado até então, já que não somos as pessoas que mais tiram fotos kkkkk. De dias mais simples até alguns eventos marcantes, sempre foi maravilhoso compartilhar o tempo com você, sinto que cada detalhe nessas fotos representa aquilo que mais gostamos, que é a companhia um do outro, independente do momento. <br> Espero que você tenha aproveitado seus dias até aqui e que venham muitos mais lembranças assim daqui em diante, que você seja imensamente feliz, amo você e amo estar ao seu lado, você é uma pessoa maravilhosa e estarei sempre torcendo por ti.
+            </p>
         </div>
     </div>
     <script src="./script/script.js"></script>
