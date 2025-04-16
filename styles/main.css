@@ -37,7 +37,7 @@ img {
 .conteudo {
     display: flex;
     flex-direction: column;
-    max-width: 240px;
+    max-width: 280px;
     text-align: center;
     margin: 80px;
     gap: 64px;
@@ -181,21 +181,15 @@ img {
         padding: 0 10px;
     }
 
-    /*.conteudo {
-        margin: 40px 0;
-        gap: 64px;
-        max-width: 80%;
-    }*/
-
     .player-container {
-        flex-direction: column;
-        align-items: stretch;
+        /*flex-direction: column;
+        align-items: stretch;*/
         height: auto;
         gap: 8px;
     }
 
     #botaoPlayPause {
-        width: 100%;
+        /*width: 100%;*/
         height: 44px;
         font-size: 28px;
     }
