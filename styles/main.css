@@ -41,7 +41,7 @@ img {
 .conteudo {
     display: flex;
     flex-direction: column;
-    max-width: 400px;
+    max-width: 520px;
     text-align: center;
     margin: 80px;
     gap: 64px;
