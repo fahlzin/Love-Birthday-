@@ -25,6 +25,10 @@ span.previa {
 }
 
 p {
+  margin: 40px 0;
+}
+
+p.card-text {
     margin: 40px 0 120px 0;
 }
 
