@@ -25,7 +25,7 @@ span.previa {
 }
 
 p {
-    margin: 0;
+    margin: 40px 0 120px 0;
 }
 
 img {
@@ -154,7 +154,6 @@ img {
 .card-text {
     font-family: "Shadows Into Light Two", cursive;
     letter-spacing: 2px;
-    margin: 40px 0 100px 0;
 }
 
 .container img {
